@@ -1,0 +1,833 @@
+.game-list.game-list-wrapper {
+  background-color: transparent;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.game-list .div {
+  background-image: url(./img/vector.png);
+  background-size: 100% 100%;
+  width: 32px;
+  height: 32px;
+}
+
+.game-list.user-plus-wrapper {
+  background-color: transparent;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.game-list .user-plus {
+  width: 32px;
+  height: 32px;
+}
+
+.game-list.div-wrapper {
+  background-color: #1d1d1af2;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.game-list .div-2 {
+  background-color: #1d1d1af2;
+  overflow: hidden;
+  width: 100%;
+  height: 4508px;
+  position: relative;
+}
+
+.game-list .copyright {
+  position: absolute;
+  width: 493px;
+  bottom:0;
+  left: 0;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.game-list .text-wrapper {
+  font-weight: 700;
+  font-style: italic;
+}
+
+.game-list .span {
+  font-weight: 700;
+}
+
+.game-list .overlap {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 1575px;
+  left: 0;
+
+}
+
+.game-list .overlap::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; /* 伪元素宽度为父元素的100% */
+  height: 100%; /* 伪元素高度为父元素的100% */
+  background-image: url(./img/background.jpg);
+  background-size: 100% 100%;
+  background-size: cover; /* 使背景圖片填滿整個容器 */
+  background-position: center; /* 將背景圖片置中 */
+  background-repeat: no-repeat; /* 防止背景圖片重複 */
+  background-attachment: fixed; /* 將背景固定 */
+  filter: blur(10px); /* 应用模糊效果，调整模糊程度 */
+}
+
+.game-list .view {
+  position: relative;
+  width: 100%;
+  height: 388px;
+  top: 50px;
+  left: 0;
+}
+
+.game-list .overlap-wrapper {
+  height: 388px;
+}
+
+.game-list .overlap-group {
+display: flex;
+justify-content: center;
+  position: relative;
+  width: 100%;
+  height: 200px;
+  top: 39px;
+  border-radius: 40.63px;
+  background-image: url(./img/InfroBackground.png); 
+  background-size: contain;
+  background-position: center; 
+  background-repeat: no-repeat; 
+  /* background: linear-gradient(180deg, rgb(26.35, 26.06, 26.06,0.4) 0%, rgb(65.45, 63.21, 63.21,0.4) 100%); */
+}
+
+.game-list .frame {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 48.87px;
+  position: relative;
+}
+
+.game-list .group {
+  position: relative;
+  width: 219.03px;
+  height: 193.04px;
+}
+
+.game-list .overlap-Intro-time {
+  position: relative;
+  width:  150px;
+  height: 150px;
+  background-size: contain;
+  background-position: center; 
+  background-repeat: no-repeat; 
+  background-image: url(./img/game-intro-time.png);
+}
+.game-list .overlap-Intro-person {
+  position: relative;
+  /* width: 215px;
+  height: 193px;
+  background-size: 100% 100%; */
+  width: 150px;
+  height: 150px;
+  background-size: contain;
+  background-position: center; 
+  background-repeat: no-repeat; 
+  background-image: url(./img/game-intro-person.png);
+}
+.game-list .overlap-Intro-money {
+  position: relative;
+  /* width: 215px;
+  height: 193px;
+  background-size: 100% 100%; */
+  width:  150px;
+  height: 150px;
+  background-size: contain;
+  background-position: center; 
+  background-repeat: no-repeat; 
+  background-image: url(./img/game-intro-money.png);
+}
+
+.game-list .text-wrapper-2 {
+  position: absolute;
+  width: 85px;
+  height: 9px;
+  top: 134px;
+  left: 64px;
+  font-family: "Krona One", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 12px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.game-list .text-wrapper-3 {
+  position: absolute;
+  width: 109px;
+  height: 45px;
+  top: 100px;
+  left: 53px;
+  font-family: "Krona One", Helvetica;
+  font-weight: 400;
+  color: #000000a4;
+  font-size: 21.5px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.game-list .alarm {
+  position: absolute;
+  width: 48px;
+  height: 47px;
+  top: 51px;
+  left: 82px;
+}
+
+.game-list .overlap-group-wrapper {
+  position: relative;
+  width: 217.7px;
+  height: 192.4px;
+}
+
+/* .game-list .overlap-2 {
+  position: relative;
+  width: 216px;
+  height: 192px;
+  background-image: url(./img/polygon-2-2.svg);
+  background-size: 100% 100%;
+} */
+
+.game-list .text-wrapper-4 {
+  position: absolute;
+  width: 152px;
+  height: 66px;
+  top: 110px;
+  left: 36px;
+  font-family: "Krona One", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 23.9px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.game-list .person {
+  position: absolute;
+  width: 58px;
+  height: 55px;
+  top: 39px;
+  left: 81px;
+}
+
+/* .game-list .group-2 {
+  position: relative;
+  width: 217.84px;
+  height: 193.04px;
+  margin-right: -2px;
+} */
+
+.game-list .overlap-3 {
+  position: relative;
+  width: 216px;
+  height: 193px;
+  background-image: url(./img/polygon-2-3.svg);
+  background-size: 100% 100%;
+}
+
+.game-list .text-wrapper-5 {
+  position: absolute;
+  width: 202px;
+  height: 66px;
+  top: 120px;
+  left: 8px;
+  font-family: "Krona One", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 14.3px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.game-list .vector {
+  position: absolute;
+  width: 58px;
+  height: 50px;
+  size: 100%;
+  top: 0;
+  left: 79px;
+}
+
+.game-list .view-wrapper {
+  display: flex;
+  justify-content: center; 
+  position: absolute;
+  width: 100%;
+  height: 200px;
+  top: 300px;
+  border-radius: 40.63px;
+  background-image: url(./img/InfroBackground.png); 
+  background-size: contain;
+  background-position: center; 
+  background-repeat: no-repeat; 
+  /* filter: blur(2.39px); */
+  /* background: linear-gradient(180deg, rgb(26.35, 26.06, 26.06,0.4) 0%, rgb(65.45, 63.21, 63.21,0.4) 100%);
+  background-color:transparent; */
+
+  display: flex;
+  justify-content: center; /* 水平居中 */
+  align-items: center; /* 垂直居中 */
+}
+
+.game-list .view-2 {
+  position: relative;
+  width: 600px;
+  height: 250px;
+  vertical-align:middle;
+  background-image: url(./img/timelist.png);
+  background-size:contain;
+  background-repeat: no-repeat; 
+ background-position: center top 35px;
+}
+
+.game-list .overlap-group-3 {
+  position: relative;
+  width: 450px;
+  height: 134px;
+}
+
+.game-list .text-wrapper-6 {
+  position: absolute;
+  width: 450px;
+  height: 134px;
+  left: 0;
+  font-family: "ABeeZee", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 39.1px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+.game-list .text-wrapper-6::before {
+  content : "";
+  position: absolute;
+  width: 450px;
+  text-align: center;
+  top :80px;
+  left: 0;
+  bottom :0;
+  height : 5px;
+  background-color : white;
+  transition : bottom 1s ease,background-color 1s ease;
+}
+.game-list .line {
+  position: absolute;
+  width: 400px;
+  height: 1px;
+  top: 116px;
+  left: 25px;
+}
+
+.game-list .view-3 {
+  position: absolute;
+  width: 1468px;
+  height: 530px;
+  top: 3015px;
+  left: -12px;
+  transform: rotate(-180deg);
+}
+
+.game-list .overlap-4 {
+  position: relative;
+  width: 1464px;
+  height: 530px;
+  background-color: #d9d9d917;
+}
+
+.game-list .text-wrapper-7 {
+  position: absolute;
+  width: 719px;
+  height: 280px;
+  top: 102px;
+  left: 594px;
+  transform: rotate(180deg);
+  font-family: "NSimSun-Regular", Helvetica;
+  font-weight: 400;
+  color: #f7eaa7db;
+  font-size: 48px;
+  text-align: center;
+  letter-spacing: 4.8px;
+  line-height: normal;
+}
+
+.game-list .img {
+  position: absolute;
+  width: 2px;
+  height: 443px;
+  top: 29px;
+  left: 494px;
+  transform: rotate(180deg);
+}
+
+.game-list .text-wrapper-8 {
+  position: absolute;
+  width: 326px;
+  height: 148px;
+  top: 168px;
+  left: 91px;
+  transform: rotate(180deg);
+  text-shadow: 3px 10px 10px #929282f2;
+  font-family: "NSimSun-Regular", Helvetica;
+  font-weight: 400;
+  color: #f7eaa7db;
+  font-size: 64px;
+  text-align: center;
+  letter-spacing: 6.4px;
+  line-height: normal;
+}
+
+.game-list .view-4 {
+  position: absolute;
+  width: 1496px;
+  height: 530px;
+  top: 2399px;
+  left: -17px;
+}
+
+.game-list .overlap-5 {
+  position: relative;
+  width: 1492px;
+  height: 530px;
+  background-color: #d9d9d917;
+}
+
+.game-list .text-wrapper-9 {
+  position: absolute;
+  width: 733px;
+  height: 280px;
+  top: 125px;
+  left: 633px;
+  font-family: "NSimSun-Regular", Helvetica;
+  font-weight: 400;
+  color: #f7eaa7db;
+  font-size: 48px;
+  text-align: center;
+  letter-spacing: 4.8px;
+  line-height: normal;
+}
+
+.game-list .line-2 {
+  position: absolute;
+  width: 2px;
+  height: 443px;
+  top: 52px;
+  left: 531px;
+}
+
+.game-list .text-wrapper-10 {
+  position: absolute;
+  width: 332px;
+  height: 148px;
+  top: 191px;
+  left: 120px;
+  text-shadow: 3px 10px 10px #929282f2;
+  font-family: "NSimSun-Regular", Helvetica;
+  font-weight: 400;
+  color: #f7eaa7db;
+  font-size: 64px;
+  text-align: center;
+  letter-spacing: 6.4px;
+  line-height: normal;
+}
+
+.game-list .view-5 {
+  position: absolute;
+  width: 100%;
+  height: 794px;
+  top: 781px;
+  left: 0;
+}
+
+.game-list .overlap-6 {
+  position: relative;
+  height: 794px;
+  width: 100%;
+}
+
+.game-list .image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.game-list .rectangle {
+  position: absolute;
+  width: 640px;
+  height: 680px;
+  top: 76px;
+  left: 7px;
+  background-color: #d9d9d966;
+  border-radius: 50px;
+}
+
+.game-list .flexcontainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+  position: absolute;
+  width: 550px;
+  height: 636px;
+  left: 15px;
+}
+
+.game-list .text {
+  position: relative;
+  align-self: stretch;
+  font-family: "Inter", Helvetica;
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 24px;
+  letter-spacing: 2.4px;
+  line-height: normal;
+}
+
+.game-list .text-wrapper-11 {
+  letter-spacing: 0.58px;
+}
+
+.game-list .text-wrapper-12 {
+  letter-spacing: 0.58px;
+  text-decoration: underline;
+}
+
+.game-list .text-wrapper-13 {
+  font-size: 15px;
+  letter-spacing: 0.23px;
+}
+
+.game-list .text-wrapper-14 {
+  font-size: 14px;
+  letter-spacing: 0.2px;
+}
+
+.game-list .image-2 {
+  position: absolute;
+  width: 869px;
+  height: 794px;
+  top: 0;
+  right: 0 ;
+}
+
+.game-list .image-wrapper {
+  position: absolute;
+  width: 100%;
+  height: 649px;
+  top: 132px;
+  left: -10px;
+   /* background-image: url(./img/game-background.png);
+  background-size: 100%; */
+  /* filter:blur(2.39px); */
+  /* background-position: 50% 50%;  */
+}
+/* .game-list .image-test {
+  position: absolute;
+  width: 100%;
+  height: 649px;
+  top: 132px;
+  left: -10px;
+  filter:blur(2.39px);
+} */
+
+.game-list .image-3 {
+  position: absolute;
+  width: 569px;
+  height: 641px;
+  top: 8px;
+  left: 445px;
+}
+.game-list .image-test {
+  position: absolute;
+  width: 100%;
+  height: 641px;
+  top: 8px;
+  /* left: 445px; */
+  filter:blur(5px);
+}
+
+.game-list .view-top {
+  position: fixed;
+  width: 100%;
+  height: 145px;
+  top: -6px;
+  left: 0;
+  background-color: #1d1d1af2;
+  box-shadow: 0px 4px 4px #00000040;
+  backdrop-filter: blur(100px) brightness(100%);
+  -webkit-backdrop-filter: blur(100px) brightness(100%);
+  mix-blend-mode: multiply;
+  opacity: 0.5;
+}
+
+.game-list .logo {
+  position: fixed;
+  width: 271px;
+  height: 87px;
+  top: 26px;
+  left: 25px;
+}
+
+.game-list .logo-2 {
+  position: fixed;
+  width: 179px;
+  height: 61px;
+  top: 41px;
+  left: 1218px;
+}
+
+.game-list .vector-2 {
+  position: absolute;
+  width: 39px;
+  height: 37px;
+  top: 14px;
+  left: 113px;
+}
+
+.game-list .vector-3 {
+  position: absolute;
+  width: 39px;
+  height: 37px;
+  top: 14px;
+  left: 36px;
+}
+
+.game-list .view-7 {
+  display: flex;
+  width: 631px;
+  height: 61px;
+  align-items: center;
+  justify-content: center;
+  gap: 150px;
+  position: fixed;
+  top: 41px;
+  left: 425px;
+}
+
+.game-list .view-8 {
+  position: relative;
+  width: 82px;
+  height: 43px;
+}
+.game-list .view-9 {
+  position: relative;
+  width: 110px;
+  height: 43px;
+}
+.game-list .view-10 {
+  position: relative;
+  width: 110px;
+  height: 43px;
+ }
+/*.game-list .text-wrapper-15 {
+  position: relative;
+  width: 82px;
+  top: 0;
+  left: 0;
+  font-family: "Inter", Helvetica;
+  font-weight: 700;
+  font-style: italic;
+  color: #ffe55ff2;
+  font-size: 25px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+  transition: transform 1s ease;
+    cursor:pointer;
+}
+.game-list .text-wrapper-15::before {
+  content : "";
+  position: absolute;
+  width: 82px;
+  top :5 px;
+  left: 0;
+  bottom :0;
+  height : 5px;
+  background-color : transparent;
+  transition : bottom 1s ease,background-color 1s ease;
+opacity:0;
+}
+.game-list .text-wrapper-15:hover{
+  transform:translateY(-10px);
+  color:white;
+}
+.game-list .text-wrapper-15:hover::before{
+  background-color:white;
+  transform:translateY(10px);
+  opacity:1;
+}
+
+
+
+.game-list .text-wrapper-16 {
+  position: absolute;
+  top: -1px;
+  left: 7px;
+  font-family: "Inter", Helvetica;
+  font-weight: 700;
+  font-style: italic;
+  color: #ffe55ff2;
+  font-size: 25px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+.game-list .text-wrapper-16::before {
+  content : "";
+  position: absolute;
+  width: 82px;
+  top :5 px;
+  left: 0;
+  bottom :0;
+  height : 5px;
+  background-color : transparent;
+  transition : bottom 1s ease,background-color 1s ease;
+opacity:0;
+}
+.game-list .text-wrapper-16:hover{
+  transform:translateY(-10px);
+  color:white;
+}
+.game-list .text-wrapper-16:hover::before{
+  background-color:white;
+  transform:translateY(10px);
+  opacity:1;
+}
+
+
+.game-list .text-wrapper-17 {
+  position: absolute;
+  top: -1px;
+  left: 5px;
+  font-family: "Inter", Helvetica;
+  font-weight: 700;
+  font-style: italic;
+  color: #ffe55ff2;
+  font-size: 25px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+.game-list .text-wrapper-17::before {
+  content : "";
+  position: absolute;
+  width: 82px;
+  top :5 px;
+  left: 0;
+  bottom :0;
+  height : 5px;
+  background-color : transparent;
+  transition : bottom 1s ease,background-color 1s ease;
+opacity:0;
+}
+.game-list .text-wrapper-17:hover{
+  transform:translateY(-10px);
+  color:white;
+}
+.game-list .text-wrapper-17:hover::before{
+  background-color:white;
+  transform:translateY(10px);
+  opacity:1;
+} */
+
+
+.game-list .text-wrapper-15 {
+  position: relative;
+  /* width: 82px; */
+  top: 0;
+  left: 0;
+  font-family: "Inter", Helvetica;
+  font-weight: 700;
+  /* font-style: italic; */
+  color: #ffe55ff2;
+  font-size: 25px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+  transition: transform 1s ease;
+    cursor:pointer;
+}
+.game-list .text-wrapper-15::before {
+  content : "";
+  position: absolute;
+  width: 100%;
+  top :5 px;
+  left: 0;
+  bottom :0;
+  height : 5px;
+  background-color : transparent;
+  transition : bottom 1s ease,background-color 1s ease;
+opacity:0;
+}
+.game-list .text-wrapper-15:hover{
+  transform:translateY(-10px);
+  color:white;
+}
+.game-list .text-wrapper-15:hover::before{
+  background-color:white;
+  transform:translateY(10px);
+  opacity:1;
+}
+
+@media (max-width: 31px) {
+  .game-list.user-plus-wrapper {
+    display: none;
+  }
+  .game-list.div-wrapper {
+    display: none;
+  }
+}
+
+@media (min-width: 32px) and (max-width: 1439px) {
+  .game-list.game-list-wrapper {
+    display: none;
+  }
+  .game-list.div-wrapper {
+    display: none;
+  }
+}
+
+@media (min-width: 1440px) {
+  .game-list.game-list-wrapper {
+    display: none;
+  }
+  .game-list.user-plus-wrapper {
+    display: none;
+  }
+}
