@@ -1,61 +1,111 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="globals/home_globals.css" />
-    <link rel="stylesheet" href="style/home_style.css" />
-  </head>
-  <body>
-    <div class="screen">
-      <div class="div">
-        <div class="view"></div>
-        <div class="component-wrapper">
-          <div class="component">
-            <p class="copyright">
-              <span class="text-wrapper">Copyright © 2024&nbsp;&nbsp;</span>
-              <span class="span">&nbsp;&nbsp;FunmeStudio</span>
-            </p>
-            <div class="overlap">
-              <div class="overlap">
-                <div class="overlap-group">
-                  <img class="image" src="img/image.svg" /> <img class="logo" src="img/logo.png" />
+    <link rel="stylesheet" href="style/game_flower_style.css" />
+</head>
+<body>
+    <template id="header-template">
+        <link rel="stylesheet" href="style/game_flower_style.css">
+        <div class="view-top">
+            <img class="logo" src="img/logo.png" />
+
+            <div class="view-7">
+                <div class="view-title">
+                    <div class="text-wrapper-15">首頁</div>
                 </div>
-                <div class="flexcontainer">
-                  <p class="text">
-                    <span class="text-wrapper-2">新北市中和區景平路776號 ( 捷運中和站🚇)<br /></span>
-                  </p>
-                  <p class="text">
-                    <span class="text-wrapper-2">(02) 2242-2656<br /></span>
-                  </p>
-                  <p class="text"><span class="text-wrapper-2">funmestudio@gmail.com</span></p>
+                <div class="view-title">
+                    <div class="text-wrapper-15">遊戲主題</div>
                 </div>
-              </div>
-              <div class="funme">瘋密工作室 ｜FunmeStudio</div>
+                <div class="view-title">
+                    <div class="text-wrapper-15">關於瘋密</div>
+                </div>
             </div>
-            <img class="rectangle" src="img/rectangle-5.png" />
-          </div>
+            <div class="logo-2">
+                <a href="https://www.instagram.com/funme_studio/" target="_blank" rel="noopener noreferrer">
+                    <img class="vector-ig-fb" src="img/vector-2.svg" />
+                </a>
+                <a href="https://www.facebook.com/FunMeStudio" target="_blank" rel="noopener noreferrer">
+                    <img class="vector-ig-fb"
+                         src="img/vector-3.svg" />
+                </a>
+            </div>
         </div>
-        <div class="group">
-          <img class="vector" src="img/vector.svg" />
-          <div class="text-wrapper-3">部落客推薦</div>
+    </template>
+    <div class="game-list div-wrapper">
+        <div class="view-top">
+            <img class="logo" src="img/logo.png" />
+
+            <div class="view-7">
+                <div class="view-title">
+                    <div class="text-wrapper-15">首頁</div>
+                </div>
+                <div class="view-title">
+                    <div class="text-wrapper-15">遊戲主題</div>
+                </div>
+                <div class="view-title">
+                    <div class="text-wrapper-15">關於瘋密</div>
+                </div>
+            </div>
+            <div class="logo-2">
+                <a href="https://www.instagram.com/funme_studio/" target="_blank" rel="noopener noreferrer">
+                    <img class="vector-ig-fb" src="img/vector-2.svg" />
+                </a>
+                <a href="https://www.facebook.com/FunMeStudio" target="_blank" rel="noopener noreferrer">
+                    <img class="vector-ig-fb"
+                         src="img/vector-3.svg" />
+                </a>
+            </div>
+            <button onclick="showContent('home')">Home</button>
         </div>
-        <div class="view-2"></div>
-        <div class="logo-2">
-          <a href="https://www.instagram.com/funme_studio/" target="_blank" rel="noopener noreferrer"
-            ><img class="img" src="img/vector-1.svg"
-          /></a>
-          <a href="https://www.facebook.com/FunMeStudio" target="_blank" rel="noopener noreferrer"
-            ><img class="vector-2" src="img/vector-2.svg"
-          /></a>
+        <div id="home" class="content">
+            <h2>Home Page</h2>
+            <li><a href="gameflower.html">Home</a></li>
         </div>
-        <img class="logo-3" src="img/logo-2.png" />
-        <div class="view-3">
-          <div class="div-wrapper"><div class="text-wrapper-4">首頁</div></div>
-          <div class="view-4"><div class="text-wrapper-5">最新消息</div></div>
-          <div class="view-5"><div class="text-wrapper-6">遊戲主題</div></div>
-          <div class="view-6"><div class="text-wrapper-7">關於瘋密</div></div>
+        <div id="home1" class="content">
+            <h2>Home Page</h2>
+            <p>Welcome to the Home Page!</p>
         </div>
-      </div>
+        <!--<script>
+        // 取得模板內容
+        var template = document.getElementById('header-template');
+
+        // 複製模板內容
+        var clone = document.importNode(template.content, true);
+
+        // 插入到頁面中
+        document.body.appendChild(clone);
+    </script>-->
+        <!--<header>
+        <h1>My Website</h1>
+        <nav>
+            <ul>
+                <li><a href="gameflower.html">Home</a></li>
+            </ul>
+        </nav>
+    </header>-->
+
+
+
+
+
+        <script>
+            function showContent(page) {
+                // 先隱藏所有內容
+                var contents = document.querySelectorAll('.content');
+                contents.forEach(function (content) {
+                    content.classList.add('hidden');
+                });
+
+                // 顯示選定的內容
+                var selectedContent = document.getElementById(page);
+                selectedContent.classList.remove('hidden');
+            }
+        </script>
+
     </div>
-  </body>
+</body>
+
 </html>
